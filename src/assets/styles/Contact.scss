@@ -8,9 +8,10 @@
   padding-top: 20px;
 
   button {
-    float: right;
+    float: right; // Consider using flexbox instead of float for better layout control
     background-color: white;
     color: #050f0b;
+    transition: background-color 0.3s, color 0.3s; // Add smooth transitions
   }
 
   button:hover {
@@ -20,6 +21,7 @@
 
   fieldset {
     background-color: white;
+    border: none; // Remove default border if needed for aesthetics
   }
 }
 
@@ -35,14 +37,14 @@ label {
 }
 
 .form-flex .MuiFormControl-root {
-  width: 100%;
+  width: 100%; // Ensures all form controls take full width
 }
 
 form {
-  width: 100% !important;
+  width: 100%; // Keep this to ensure form takes full width
 }
 
 .body-form {
-  width: 100% !important;
-  margin-bottom: 15px !important;
+  width: 100%; // Keep this to ensure body form takes full width
+  margin-bottom: 15px; // Maintain margin for spacing
 }
